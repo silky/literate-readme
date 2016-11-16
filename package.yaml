@@ -1,0 +1,24 @@
+name:                literate-readme-app
+version:             0.1.0.0
+synopsis:            An app that can be built on travis for demonstration reasons.
+description:         Please see README.md
+homepage:            https://github.com/silky/literate-readme-app#readme
+license:             BSD3
+author:              Noon van der Silk
+maintainer:          noonsilk@gmail.com
+copyright:           Noon van der Silk
+
+dependencies:
+  - base >= 4.7 && < 5
+
+executables:
+  literate-readme-app:
+    source-dirs:      src
+    main:             Main.hs
+
+tests:
+    spec:
+        main: Test.hs
+        source-dirs: tests
+        dependencies:
+            - hspec == 2.*
