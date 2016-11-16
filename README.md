@@ -13,8 +13,11 @@ import Turtle
 
 The readme that builds itself!
 
+You can setup and build this project by running this very readme. This is what
+the travis job does!
 
-You can setup and build this project.
+Example: `./README.lhs --setup --test`
+
 
 ```haskell
 parser :: Parser (Bool, Bool, Bool)
