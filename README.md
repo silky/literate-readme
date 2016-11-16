@@ -41,6 +41,7 @@ stackOrNop _  _    = nop
 ## Setup
 
 ```haskell
+-- | Call this with: ./README.lhs --setup
 doSetup = stackOrNop "setup"
 ```
 
@@ -48,6 +49,7 @@ doSetup = stackOrNop "setup"
 ## Build
 
 ```haskell
+-- | Call this with: ./README.lhs --build
 doBuild = stackOrNop "build"
 ```
 
@@ -55,5 +57,6 @@ doBuild = stackOrNop "build"
 ## Test
 
 ```haskell
+-- | Call this with: ./README.lhs --test
 doTest = stackOrNop "test"
 ```
