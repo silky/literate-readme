@@ -30,30 +30,30 @@ parser = (,,) <$> switch "setup" 's' "Set up the stack environment."
 main = void $ do
     (setup, test, build) <- options "Literate README" parser
     let ops = doSetup setup .&&. doBuild build .&&. doTest test
-    ops .||. die "Failed."
+    ops .||. die "Step failed."
 
 nop = shell "true" empty
+
+stackOrNop op True = shell ("stack " <> op) empty
+stackOrNop _  _    = nop
 ```
 
 ## Setup
 
 ```haskell
-doSetup True = shell "stack setup" empty
-doSetup _    = nop
+doSetup = stackOrNop "setup"
 ```
 
 
 ## Build
 
 ```haskell
-doBuild True = shell "stack build" empty
-doBuild _    = nop
+doBuild = stackOrNop "build"
 ```
 
 
 ## Test
 
 ```haskell
-doTest True = shell "stack test" empty
-doTest _    = nop
+doTest = stackOrNop "test"
 ```
