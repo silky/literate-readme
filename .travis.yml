@@ -5,6 +5,12 @@ sudo: false
 cache:
     directories:
         - $HOME/.stack
+          
+# Ensure necessary system libraries are present
+addons:
+  apt:
+    packages:
+      - libgmp-dev
 
 before_install:
     # Download and unpack the stack executable
