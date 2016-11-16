@@ -22,7 +22,7 @@ Example: `./README.lhs --setup --test`
 ```haskell
 parser :: Parser (Bool, Bool, Bool)
 parser = (,,) <$> switch "setup" 's' "Set up the stack environment."
-              <*> switch "test"  's' "Build the project and run the tests."
+              <*> switch "test"  't' "Build the project and run the tests."
               <*> switch "build" 'b' "Just build, don't run tests."
 ```
 
