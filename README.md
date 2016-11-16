@@ -9,6 +9,11 @@ import Turtle
 
 # Literate README
 
+[![Build status](https://travis-ci.org/silky/literate-readme.svg)](https://travis-ci.org/silky/literate-readme)
+
+The readme that builds itself!
+
+
 You can setup and build this project.
 
 ```haskell
