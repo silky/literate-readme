@@ -1,5 +1,5 @@
 #!/usr/bin/env stack
-> -- stack --install-ghc runghc --package turtle --package markdown-unlit -- "-pgmL markdown-unlit"
+> -- stack script --resolver lts-8.12 --package turtle --package markdown-unlit -- "-pgmL markdown-unlit"
 
 ```haskell
 {-# LANGUAGE OverloadedStrings #-}
