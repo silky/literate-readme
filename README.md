@@ -9,7 +9,8 @@ import Turtle
 
 # Literate README
 
-[![Build status](https://travis-ci.org/silky/literate-readme.svg)](https://travis-ci.org/silky/literate-readme)
+[![Build status](https://travis-ci.org/silky/literate-readme.svg)](https://travis-ci.org/silky/literate-readme) <a href="https://high5.cool/high5/754d8358-fe0b-5e5c-8407-beec85b1a603"><img src="https://high5.cool/static/img/high5-me-green.png" />
+</a>
 
 The readme that builds itself!
 
