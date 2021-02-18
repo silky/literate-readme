@@ -7,3 +7,5 @@ extra-deps: []
 flags: {}
 
 extra-package-dbs: []
+
+system-ghc: true
