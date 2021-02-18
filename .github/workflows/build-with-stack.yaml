@@ -14,7 +14,7 @@ jobs:
         uses: haskell/actions/setup@v1
         with:
           # This comes from the stack.yaml
-          ghc-version: '8.0.2'
+          ghc-version: '8.0.1'
           enable-stack: true
           stack-version: 'latest'
 
