@@ -17,4 +17,4 @@ jobs:
           enable-stack: true
           stack-version: 'latest'
 
-      - run: ./go
+      - run: ./README.lhs --setup --test
