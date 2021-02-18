@@ -5,4 +5,4 @@
 shift
 
 # Pass al the other args on.
-stack runghc --resolver lts-8.12 --package turtle --package markdown-unlit -- "-pgmL markdown-unlit" README.lhs "$@"
+stack runghc --resolver lts-8.24 --package turtle --package markdown-unlit -- "-pgmL markdown-unlit" README.lhs "$@"
