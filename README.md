@@ -14,7 +14,7 @@ import Turtle
 The readme that builds itself!
 
 You can setup and build this project by running this very readme. This is what
-the travis job does!
+the CI job does!
 
 Example: `./README.lhs --setup --test`
 
